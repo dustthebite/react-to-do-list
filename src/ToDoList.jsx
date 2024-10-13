@@ -26,8 +26,7 @@ function ToDoList(){
     function moveTaskUp(id){
         const updatedTasks = [...tasks]
         if(id > 0){
-            //const updatedTasks = [...tasks]; <- this thing for some reason causes a crash IF YOU DONT PUT ; 
-            //I NEED ; IN MY REACT PROJECT???
+            
             
             [updatedTasks[id], updatedTasks[id-1]] = 
             [updatedTasks[id-1], updatedTasks[id]]
@@ -39,8 +38,7 @@ function ToDoList(){
     function moveTaskDown(id){
         const updatedTasks = [...tasks]
         if(id < tasks.length-1){
-            //const updatedTasks = [...tasks]; <- this thing for some reason causes a crash IF YOU DONT PUT ; 
-            //I NEED ; IN MY REACT PROJECT???
+            
             
             [updatedTasks[id], updatedTasks[id+1]] = 
             [updatedTasks[id+1], updatedTasks[id]]
